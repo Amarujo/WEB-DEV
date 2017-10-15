@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cuadro en Pared</title>
+    <style>
+        .pared{
+            width: 100%;
+            height: 100%;
+            /* background: #000000 */
+            background-image: url(/imagenes/pared.jpg);
+            /* background-repeat: repeat-x repeat-y; */
+        }
+
+        .pintura{
+            margin: auto auto;
+            width: 500px;
+            margin-top: 60px;
+            /* border-image: url(/imagenes/pared.jpg) 50 round; */
+            padding: 20px;
+        }
+
+        .pintura img{
+            width: 500px;
+            /* border-image: url(/imagenes/madera.jpg) 50 round; */
+
+            /* border: 20px solid red; */
+            -webkit-border-image: url(/imagenes/madera.png) 30 round; /* Safari 3.1-5 */
+    -o-border-image: url(/imagenes/madera.png) 30 round; /* Opera 11-12.1 */
+    border-image: url(imagenes/madera.png) 15% repeat;
+            padding: 10px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body class="pared">
+        <div class="pintura">
+            <img src="imagenes/imagen.jpg" alt="imagen">
+        </div>
+</body>
+</html>

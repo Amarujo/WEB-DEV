@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#cabecera{
+	background-color:#3319D7;
+}
+#bandeja{
+	background-color:#08A706;
+	float:left;
+	height:750px;
+	width:200px;
+}
+
+#contenido{
+	
+	background-color:#D0CD7F;
+	margin-left:200px;
+	
+	padding-left:50px;
+	padding-top:30px;
+}
+header{
+	background-color:#08A706;
+}
+
+nav{
+	background-color:#EC0909;
+}
+
+#pie1{
+	background-color:#3319D7;
+	clear:both;
+}
+li{
+	background-color:#F5ED0E;
+	display:inline;
+}
+a{
+	text-decoration:none;
+	}
+	
+
+

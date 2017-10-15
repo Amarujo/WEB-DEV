@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navegacion</title>
+    <style>
+        body{
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            line-height: 1.4em;
+        }
+        nav{
+            background: #696;
+            padding: 1em;
+            
+        }
+        form{
+            display: inline;
+        }
+        h1{
+            display:inline-block;
+/*            float: left;*/
+        }
+        a{
+            font-size:24px;
+            font-weight: bold;
+            color: rgba(0,0,0,0.6);
+            text-decoration: none;
+            padding: .3em .5em;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.67);
+            transition: background-color 1s linear;
+                
+        }
+        button{
+            padding: .7em 1em;
+            cursor: pointer;
+        }
+        input, button{
+            font-size: 16px;
+            color: black;
+            border-radius: 5px;
+            background-color: rgba(255,255,255, 0.6);
+        }
+        
+        a:hover, input:hover, button:hover,
+        a:focus, input:focus, button:focus{
+            background-color: white;
+        }
+        a:focus, input:focus, button:focus{
+            box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.26);
+            outline: 0;
+        }
+        input, button{
+            border: 0;
+        }
+        
+        
+    </style>
+</head>
+<body>
+   <nav>
+       <h1><a href="#">IDESWEB</a></h1>
+       <form action="">
+           <label for="">Buscar</label>
+           <input type="text" id="buscar">
+           <button>+</button>
+       </form>
+   </nav>
+    
+</body>
+</html>

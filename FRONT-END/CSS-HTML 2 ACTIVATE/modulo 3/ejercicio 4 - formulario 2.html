@@ -1,0 +1,144 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: #ccc;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        body{
+            width: 868px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+        }
+        section, h1{
+            border-bottom: 2px solid #ccc;
+        }
+        h1{
+            padding-bottom: 20px;
+        }
+        section h3{
+            margin-left: -170px;
+            margin-top: 0;
+            padding-top: 20px;;
+        }
+        section{
+            position: relative;
+            padding-left: 20%;
+            padding-bottom: 40px;
+        }
+        section input, section select{
+            border: 3px solid transparent;
+            border-bottom: 3px solid black;
+            display: block;
+            font-size: 1.01em;
+        }
+        
+        section select{
+            width: 12em;
+        }
+       
+        section .input_largo{
+            width: 23em;
+        }
+        .direccionLeft{
+            width: 50%;
+            float: left;
+        }
+        .direeccionRight{
+            width: 50%;
+            float: left;
+        }
+        .direccionLeft label, .direccionLeft input,
+        .direccionRight label, .direccionRight input{
+            display: block;
+        }
+        
+        #centrado{
+            text-align: right;
+        }
+        
+        input[type="submit"]{
+            padding: 10px;
+            font-size: 1.2em;
+        }
+        
+        section:hover{
+            background-color: rgba(253, 253, 64, 0.9);
+        }
+        input:focus, select:focus{
+            border: 3px solid transparent;
+            border: 3px solid #f00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="" method="get">
+        <section>
+        <h3>Nombre y apellido</h3>
+        <p>
+            <input type="text" name="nombre" id="nombre">
+            <label for="nombre">Nombre</label>
+        </p>
+        <p>
+            <input type="text" name="apellido1" id="apellido1" class="input_largo">
+            <label for="apellido1">Primer apellido</label>
+        </p>
+        <p>
+            <input type="text" name="apellido2" id="apellido2" class="input_largo">
+            <label for="apellido2">Segundo Apellido</label>
+        </p>
+    </section>
+    <section>
+        <h3>Direccion</h3>
+        <p>
+            <input type="text" name="direccion" id="direccion" class="input_largo">
+            <label for="direccion">Calle, numero, piso, puerta</label>
+        </p>
+        
+           <div class="direccionLeft">
+            <input type="text" name="codigo_postal" id="codigo_postal">
+            <label for="codigo_postal">Codigo postal</label>
+               <br>
+            <select name="provincia" id="provincia"></select>
+            <label for="provincia">Provincia</label>
+           </div>
+           
+           <div class="direccionRight">
+            <input type="text" name="municipio" id="municipio">
+            <label for="municipio">Municipio</label>
+               <br>
+            <select name="pais" id="pais"></select>
+            <label for="pais">Pais</label>
+           </div>
+                
+        
+    </section>
+    <section>
+        <h3><label for="correo">Email</label></h3>
+        <input type="email" name="correo" id="correo" class="input_largo">
+        
+    </section>
+    <section>
+        <h3><label for="telfijo">Telefono</label></h3>
+
+        <div class="direccionLeft">
+            <input type="text" name="telfijo" id="telfijo" >
+            <label for="telfijo">Fijo</label>
+        </div>
+
+        <input type="text" name="movil" id="movil">
+        <label for="movil">Movil</label>
+        
+    </section>
+    <p id="centrado">
+    <input type="submit" value="Registrarse">
+        
+    </p>
+    </form>
+</body>
+</html>

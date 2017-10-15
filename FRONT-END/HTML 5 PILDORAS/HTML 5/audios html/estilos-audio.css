@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#reproductor{
+	width : 720px;
+	margin: 20px auto;
+	
+	padding: 5px;
+
+	background:#000;
+	border: 2px solid #000000;
+	border-radius: 8px;
+	
+}
+
+
+nav{
+	margin: 5px 0;
+	}
+	
+#botonera{
+	float:left;
+	width:100px;
+	height:20px;
+}
+
+#barra{
+
+	background:#fff;
+	widows:600px;
+	height:16px;
+	border: 2px solid #7E7E7E;
+	padding:3px;
+	margin-left:50px;
+	}
+
+#progreso{
+	position: absolute;
+
+	
+	height: 15px;
+	background-color:#f00;
+
+}

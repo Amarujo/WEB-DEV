@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf8"/>
+<title>Formulario de registro - Mi web</title>
+</head>
+<body>
+<header>Formularios</header>
+<form action="" method="get">
+<fieldset>
+<legend>Datos Personales</legend>
+<p>
+Nombres: <input type="text" name="nombre" maxlength="50" />
+</p>
+<p>
+Apellidos: <input type="text" name="apellido" maxlength="50"/>
+</p>
+<p>
+Sexo: <input type="radio" name="sexo" value="h" id="sexoh"><label for="sexoh">Hombre</label><input type="radio" name="sexo" value="m" id="sexom"><label for="sexom">Mujer</label>
+</p>
+<P>
+Direccion de Correo: <input type="text" name="correo"/>
+</P>
+</fieldset>
+
+<p>
+<input type="checkbox" name="info" checked="checked" id="info"/> <label for="info">Deseo recibir información sobre novedades y ofertas</label>
+</p>
+<p>
+<input type="checkbox" name="condiciones" id="condiciones"/><label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre protección de datos</label>
+</p>
+<p>
+<input type="submit" value="enviar"/>
+</p>
+
+<p><label for="poblacion">Población:</label>
+<select name="poblacion" id="poblacion">
+	<option>Alicante</option>
+	<option>Madrid</option>
+	<option>Sevilla</option>
+	<option>Valencia</option>
+</select>
+</p>
+
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primera pagina js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <style>
+    h1{
+        font-size: 46.2px;
+        font-weight: 1.6em;
+    }
+        </style>
+    <script>
+        document.write(prompt("ingresa nombre:")); 
+    </script>
+</head>
+<body>
+    
+<div class="container">
+        <a name="" id="" onclick="nuevo()" class="btn btn-primary" href="#" role="button">nuevo +</a>
+        <h1>hola</h1>
+        <script>
+                var nombre = ["max", "giuliano", "picco", "olmedo"];
+                nombre.push("gaucho");
+                function nuevo(){
+                    nombre.push(prompt("Ingresa nuevo nombre"));
+                }
+                document.write("<ul>")
+                nombre.forEach(function(element) {
+                        document.write("<li>")
+                            document.write(element)
+                        document.write("</li>")
+                }, this);
+                document.write("</ul>")
+    
+        </script>
+</div>
+</body>
+</html>

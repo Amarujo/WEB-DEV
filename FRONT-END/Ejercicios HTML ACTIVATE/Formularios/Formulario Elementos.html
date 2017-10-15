@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Nuevo</title>
+</head>
+
+<body>
+
+<header><h1>Nuevas caracteristicas en Formularios</h1></header>
+
+<form id="form1">
+	<p>
+	<label for="name">Ingresa el nombre:&nbsp</label><input id="name" type="text"
+	placeholder="nombre apellido"
+	autofocus
+	autocomplete
+	required/>
+	</p>
+	
+	<p>
+	<label for="contrasena">Ingresa la contrasena:&nbsp</label><input id="contrasena" type="password"
+	placeholder="abc1234"
+	pattern="[a-z]{3}[0-9]{4}"
+	required/>
+	</p>
+	
+	<p>
+	<label for="telefono">Telefono:&nbsp</label><input id="telefono" type="tel" name="phone" placeholder="+1234567"/>
+	</p>
+	
+	<p>
+	<label for="email">Email:&nbsp</label><input id="email" type="email" name="email" placeholder="example@email.com"/>
+	</p>
+	
+	<p>
+	<label for="website">Tu pagina:&nbsp</label><input id="website" type="url" name="website" placeholder="http://tuweb.com"/>
+	</p>
+	
+	<p>
+	<label for="numero">Numero de temas:&nbsp</label><input id="numero" type="number" name="numero" placeholder="2" min="2" max="14" step="2"/>&nbsp Numeros pares solamente
+	</p>
+	
+	<p>
+	<label for="fecha">Fecha de envio:&nbsp</label><input id="fecha" type="date" name="fecha" min="2012-07-16" />&nbsp Minimo (2012-07-16)
+	</p>
+	
+	<p>
+	<label for="color">Color del item:&nbsp</label><input id="color" type="color" name="color" />
+	</p>
+	
+	<p>
+	<label for="buscar">Buscar:&nbsp</label><input id="buscar" type="search" name="buscar" />
+	</p>
+	
+	<p>
+	<label for="points">Rango de valores:&nbsp</label><input id="points" type="range" name="points" min="1" max="10"/>
+	</p>
+	
+	<p>
+	<fieldset>
+		<legend>Prioridad:</legend>
+			<p><label><input type="radio" name="prioridad" value="baja" checked/>baja</label></p>
+			<p><label><input type="radio" name="prioridad" value="media"/>media</label></p>
+			<p><label><input type="radio" name="prioridad" value="alta"/>alta</label></p>
+	</fieldset>
+	</p>
+	
+	<p>
+	<fieldset>
+		<legend>Tipo de envio:</legend>
+			<p><label><input type="checkbox" name="delivery" value="urgente" checked/>Urgente</label></p>
+			<p><label><input type="checkbox" name="delivery" value="recibo"/>con recibo</label></p>
+			<p><label><input type="checkbox" name="delivery" value="reembolso"/>contra reembolso</label></p>
+	</fieldset>
+	</p>
+	
+	<input type="submit" value="enviar"/>
+	
+</form>
+
+</body>
+</html>

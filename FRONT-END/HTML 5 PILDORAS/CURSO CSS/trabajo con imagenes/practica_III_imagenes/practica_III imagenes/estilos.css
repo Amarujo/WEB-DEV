@@ -1,0 +1,72 @@
+/* reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+/* final reset css */
+
+body {
+	font-size: 62.5%;
+}
+#contenido {
+	margin-left: 15px;
+	margin-top: 15px;
+	border: 1px dashed #999;
+	border-right: none;
+	border-bottom: none;
+}
+
+#galeria .figura p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	line-height: normal;
+	margin: 10px 0 0 0;
+	width: 200px; /*width property cant go after height*/
+	height: 5em;
+	
+}
+.foto{
+	background: url(/sombra.gif) right bottom no-repeat;
+}
+
+.foto img{
+	border: 1px solid #333;
+	background: #fff;
+	padding: 4px;
+
+	position: relative;
+
+	top: -5px;
+	left: -5px;
+}
+
+
+h1 {
+	font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
+	margin: 0;
+	border-bottom: 1px dashed #999;
+	padding: 5px 0 5px 8px;
+	color: #14556b;
+}
+p {
+	font: 1.6em/160% Georgia, "Times New Roman", Times, serif;
+	margin: 10px 8px;
+}
+.figura{
+	float: left;
+	width: 210px;
+
+	margin:0 10px 10px 10px;
+
+	/* background: pink; */
+	/* border: 2px solid black; */
+}

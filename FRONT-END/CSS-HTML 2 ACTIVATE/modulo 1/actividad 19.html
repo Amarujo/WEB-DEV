@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejemplo de selectores avanzados</title>
+<style>
+
+table, tr, th, td{
+  border: 1px solid #333;
+  line-height: 2em;
+}
+th{
+  background: #F5F5F5;
+  font-style: bold;
+}
+th{
+  padding: 0 .3em;
+}
+
+.euro{
+  /*background: #E6F3FF url("http://www.iconsdb.com/icons/preview/black/euro-xxl.png") no-repeat left center;*/
+  background: #E6F3FF url("imagenes/euro-16.ico")
+no-repeat left center;
+padding: 0 .3em 0 1.2em;
+}
+.dolar{
+  background: #E6F3FF url("imagenes/dolar.ico") no-repeat left center;
+  padding: 0 3em 0 1.2em;
+}
+  
+.libra{
+  background: #E6F3FF url("imagenes/libra.ico") no-repeat left center;
+  padding: 0 3em 0 1.2em ;
+}
+
+.yen{
+  background: #E6F3FF url("imagenes/yen.ico") no-repeat left center;
+  padding: 0 3em 0 1.2em;
+}
+
+tr:nth-child(n+1) td{
+  text-align: right;
+}
+
+tr:nth-child(2n) {
+  background-color: #FFFFCC;
+}
+
+tr:hover {
+
+  background: #FFFF66;
+}
+
+</style>
+</head>
+<body>
+<table>
+  <tr>
+    <th>Cambio</th>
+    <th>Compra</th>
+    <th>Venta</th>
+    <th>Máximo</th>
+    <th>Mínimo</th>
+  </tr>
+  <tr>
+    <th class="euro">Euro/Dolar</th>
+    <td>1.25</td>
+    <td>1.25</td>
+    <td>1.25</td>
+    <td>1.24</td>
+  </tr>
+  <tr>
+    <th class="dolar">Dolar/Yen</th>
+    <td>119.01</td>
+    <td>119.05</td>
+    <td>119.82</td>
+    <td>119.82</td>
+  </tr>
+  <tr>
+    <th class="libra">Libra/Dolar</th>
+    <td>1.86</td>
+    <td>1.86</td>
+    <td>1.86</td>
+    <td>1.85</td>
+  </tr>
+  <tr>
+    <th class="yen">Yen/Euro</th>
+    <td>0.67</td>
+    <td>0.67</td>
+    <td>0.66</td>
+    <td>0.67</td>
+  </tr>
+</table>
+</body>
+</html>

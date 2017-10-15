@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    color: #003;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62%;
+    /* background: #2BB0C6; */
+    background: #09f url(imagenes\\fondo_div.png) repeat-x;
+}                                           
+
+#principal{
+    background-image: url(imagenes\\fondo.jpg);
+    background-repeat: repeat-x;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+    width: 740px;
+    height: 100%;
+    padding: 0 20px;
+    
+}
+
+#principal .titulo{
+    margin-top: 0; 
+}
+
+#principal .titulo strong{
+    color: white;
+    font-size: 2.4em;
+    margin-right: -85px; /*MARGIN NEGATIVO*/
+}
+
+#principal h1{
+    color: #f30;
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    
+}
+
+#principal h2{
+    font: bold 3.5em "Hoefler text",Garamond, Times, serif;
+    border-bottom: 2px solid #333;
+    margin-top: 25px;
+}
+
+#principal h3{
+    color: #f30;
+    font-size:  1.9em ;
+    font-weight: bold;
+    /* font-family: "Hoefler text",Garamond, Times, serif;  */
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#principal p{
+    font-size: 1.5em;
+    line-height: 150%;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+#principal p::first-line{
+    font-weight: bold;
+    color: olive;
+}
+
+#principal ul{
+    float: right;
+    width: 150px;
+    margin: 50px 0 25px 50px ;
+    
+}
+
+#principal li{
+    color: #EB2828;
+    font-size: 1.5em;
+    line-height: 1.6em;
+}
+
+#principal .autor{
+    font-size: 1.6em;
+    margin: 5px 0 25px 50px;
+}
+
+#principal .autor strong{
+    font-size: 1.1em;
+    color: #B02806;
+}
+

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script>
+            alert("hello");
+    </script>
+</head>
+<body>
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills" id="navId">
+            <li class="nav-item">
+                <a href="#quienessomos" class="nav-link active">Quienes somos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">La Universidad</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#carreras">Carreras</a>
+                    <a class="dropdown-item" href="#sedes">Sedes</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#egresados">Egresados</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="#mision" class="nav-link">Mision</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link disabled">Vision</a>
+            </li>
+        </ul>
+    
+        
+    
+    <div class="card card-inverse card-primary">
+      <img class="card-img-top img-fluid" src="holder.js/100%x180/" alt="">
+      <div class="card-block">
+        <h4 class="card-title">Subscripcion</h4>
+        <p class="card-text">Ingresa datos</p>
+        <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" aria-describedby="" placeholder="example@email.com">
+                <small id="" class="form-text text-muted">Ingrese su correo</small>
+              </div>
+      </div>
+    </div>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="quienessomos" role="tabpanel"></div>
+        <div class="tab-pane fade" id="carreras" role="tabpanel"></div>
+        <div class="tab-pane fade" id="sedes" role="tabpanel"></div>
+        <div class="tab-pane fade" id="egresados" role="tabpanel"></div>
+        <div class="tab-pane fade" id="mision" role="tabpanel"></div>
+    </div>
+    
+    <script>
+        $('#navId a').click(e => {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    </script>
+    
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
